@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "869822182907",
+    "project_id": "fiapflutterproject",
+    "storage_bucket": "fiapflutterproject.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:869822182907:android:6d1615d46224a296fec75e",
+        "android_client_info": {
+          "package_name": "com.fiap.flutter.daianne"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "869822182907-q2qtg8fjevu7oage45pkocf7568mppa1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCk2bxiNPlydjkPaAaMoMq_4CVpsJVuENc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "869822182907-q2qtg8fjevu7oage45pkocf7568mppa1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
