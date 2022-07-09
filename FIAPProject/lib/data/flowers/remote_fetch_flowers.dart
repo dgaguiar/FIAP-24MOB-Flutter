@@ -5,8 +5,8 @@ import '../http/http_client.dart';
 import '../http/http_error.dart';
 import 'models/flower_model.dart';
 
-class RemoteFetchMovies extends FetchFlowers {
-  RemoteFetchMovies({
+class RemoteFetchFlower extends FetchFlowers {
+  RemoteFetchFlower({
     required this.httpClient,
   });
 

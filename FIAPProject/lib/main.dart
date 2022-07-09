@@ -1,6 +1,6 @@
-import 'package:fiapproject/domain/usecases/login_with_email.dart';
-import 'package:fiapproject/domain/usecases/register_with_email.dart';
-import 'package:fiapproject/presenter/login_presenter.dart';
+import 'package:fiapproject/main/factory/pages/flowers/flower_screen_factory.dart';
+import 'package:fiapproject/main/factory/pages/login/login_screen_factory.dart';
+import 'package:fiapproject/ui/flower/flower_screen.dart';
 import 'package:fiapproject/ui/login/login_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:firebase_core/firebase_core.dart';
@@ -18,17 +18,16 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    const LoginWithEmail mail = LoginWithEmail();
-    const LoginPresenter presenter = LoginPresenter(
-        loginWithEmail: LoginWithEmail(),
-        registerWithEmail: RegisterWithEmail()
-    );
-    return MaterialApp(
+    return GetMaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: const LoginScreen(presenter: null),
+      initialRoute: LoginScreen.id,
+      getPages: [
+        GetPage(name: LoginScreen.id, page: makeLoginScreen),
+        GetPage(name: FlowersScreen.id, page: makeFlowerScreen),
+      ],
     );
   }
 }
